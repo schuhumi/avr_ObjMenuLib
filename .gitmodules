@@ -1,3 +1,9 @@
 [submodule "avr_ObjButtonLib"]
 	path = avr_ObjButtonLib
 	url = https://github.com/schuhumi/avr_ObjButtonLib.git
+[submodule "avr_ObjRotaryLib"]
+	path = avr_ObjRotaryLib
+	url = https://github.com/schuhumi/avr_ObjRotaryLib.git
+[submodule "avr_ObjLcdLib"]
+	path = avr_ObjLcdLib
+	url = https://github.com/schuhumi/avr_ObjLcdLib.git
