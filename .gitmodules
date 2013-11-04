@@ -1,0 +1,3 @@
+[submodule "avr_ObjButtonLib"]
+	path = avr_ObjButtonLib
+	url = https://github.com/schuhumi/avr_ObjButtonLib.git
