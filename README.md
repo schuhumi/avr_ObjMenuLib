@@ -22,3 +22,5 @@ and offers:
         MENU_DRAW: Give this function a list of pointers to every menu-entry to draw the menu. Now you don't need to worry about anything, the microcontroller automaticall jumps in the right function when an entry is selected by the user
 
 There are examples in main.c, which show the basics.
+
+Note: At the moment, the library is written for two-lined displays, which means you can't configure the height of the menu-rendering. But you can adjust the columns in MENUS.h
