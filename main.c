@@ -38,6 +38,12 @@ type_BUTTON button_B;
 type_ROTARYENC encoder_A;
 type_ROTARYENC encoder_B;
 
+void RUN_THIS_EVERY_1MS (void)		// Without this the rotary encoders won't do anything
+{
+	ROTARYENC_RUN(&encoder_A);
+	ROTARYENC_RUN(&encoder_B);
+}
+
 int main (void)
 {	
 	/// Configure Devices //////////////////////////////////////
@@ -100,14 +106,7 @@ int main (void)
 
     // INIT rotary encoders
 		ROTARYENC_INIT(&encoder_A);
-		ROTARYENC_INIT(&encoder_B);
-		
-	// !!!! FOR THIS EXAMPLE TO WORK, YOU NEED TO RUN
-	// 			ROTARYENC_RUN(&encoder_A)
-	//			ROTARYENC_RUN(&encoder_B)
-	//		EVERY FEW MILLISECONDS !!!!
-	// (Otherwise rotary encoders won't do anything)
-		
+		ROTARYENC_INIT(&encoder_B);		
 	/// END INIT Devices ///////////////////////////////////////
 	
 	while(1)
